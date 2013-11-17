@@ -1,0 +1,20 @@
+\documentclass[letterpaper,11pt]{article}
+\title{CS 4780 Assignment 5}
+\author{Feiran Chen(fc254), Yimin Wang(yw475)}
+\date{\today}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\begin{document}
+\maketitle
+\section{Problem 1: Viterbi Algorithm}
+\subsection{}
+In dynamic programming, the probability of current state only depends on the
+previous step.
+So the recurence relation of $\delta_{s,t}$ is:
+\[\delta_{s,t}=\argmax_{y_{t-1} \in \{a,i,p,s\}}\delta_{y_{t-1},t-1}P(x_t|s)P(s|y_{t-1})\]
+And the initial conditions are:
+\[\delta_{s,1}=P(s)P(x_1|s)\]
+\subsection{}
+
+\end{document}
